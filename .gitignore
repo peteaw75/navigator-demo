@@ -1,0 +1,6 @@
+#List of files to be excluded
+#Date: 19th Feb 2024
+
+*.tar.gz
+*.tar
+*.log

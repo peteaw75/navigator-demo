@@ -1,0 +1,11 @@
+---
+
+- name: Uninstall tree package 
+  hosts: dev_servers
+  gather_facts: true
+  tasks:
+
+  - name: Uninstall tree package using yum
+    ansible.builtin.yum:
+      name: tree
+      state: absent
