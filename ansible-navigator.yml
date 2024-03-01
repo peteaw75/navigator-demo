@@ -5,7 +5,7 @@ ansible-navigator:
       path: ./ansible.cfg
   execution-environment:
     container-engine: podman
-    enabled: true 
+    enabled: false 
     image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
     pull:
       policy: missing
