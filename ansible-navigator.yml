@@ -5,14 +5,16 @@ ansible-navigator:
       path: ./ansible.cfg
   execution-environment:
     container-engine: podman
-    enabled: false 
-    image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
+    enabled: true
+#    image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
+    image: hlaah01.idm.lokidev.xyz/ee-supported-rhel8
     pull:
       policy: missing
-#    volume-mounts:
-#      - dest: "tmpreports"
-#        src: "/tmp/reports"
-#        options: Z
+      arguments: 
+        - "--tls-verify=false"
+  color:
+    enable: False
+    osc4: False
   logging:
     level: debug
   playbook-artifact:

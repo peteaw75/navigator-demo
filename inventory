@@ -1,2 +1,9 @@
 [dev_servers]
 hlrhel801.idm.lokidev.xyz
+
+[prod_servers]
+hlrhrel802.idm.lokidev.xyz
+
+[loki_app:children]
+dev_servers
+prod_servers
